@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chat Application</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3aClrUL-ULewx7zRO3GYtEtwDARRFdJ_kdmD_cg_m7chbZdjpnzbQVAIGNC00QDUOlbw&usqp=CAU");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  color: burlywood;
+  font-family: cursive;
+  background-color: ivory;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.middle {
+  width: 50%;
+}
+#ma{
+  margin-left: 35%;
+  margin-top: 8%;
+}
+.button {
+  background-color: rgb(200, 200, 200); /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  border-radius: 30px;
+  height: 100%;
+  width: 50%;
+  font-family: arial;
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chat Application</h1>
+</div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  
+  <li style="float:right"><a href="#">Login</a></li>
+  <li style="float:right"><a href="#">SignUp</li>
+</ul>
+<div>
+  <div class="column middle" id="ma">
+    <button name="Student" class="button"><a href="http://localhost/WT%20project/appchat/index1.php">Student</a></button>
+  </div>
+  <div class="column middle" id="ma">
+    <button name="Faculty"  class="button"><a href="http://localhost/WT%20project/appchat/index1.php">Faculty</a></button>
+  </div>
+</div>
+
+</body>
+</html>
+
+
